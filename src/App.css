@@ -1,0 +1,444 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Arizonia&family=Bebas+Neue&family=IBM+Plex+Sans&family=Marck+Script&family=Merriweather&family=Orbitron:wght@800&family=Playpen+Sans&family=Roboto&family=Roboto+Slab:wght@500&family=Rock+Salt&family=Rouge+Script&family=Sofia&family=Space+Mono&family=Ubuntu:wght@300&display=swap');
+
+/* Default CSS */
+
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+  transition: .3s linear;
+}
+
+::-webkit-scrollbar-thumb, *:hover::-webkit-scrollbar-thumb {
+  background: #e1e6f1;
+}
+
+/* Navbar CSS */
+
+.navbar {
+  margin: 0.5%;
+  border-radius: 20px;
+  position: absolute;
+  z-index: 99999999;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  transition: 0.4s ease-in;
+  background-color: black!important;
+}
+
+.navbar a {
+  color: rgba(255, 255, 255, 0.6)!important;
+  height: 13vh;
+  font-size: 18px!important;
+  letter-spacing: 1px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: 0.2s ease-in;
+  display: flex;
+  align-items: center;
+}
+
+.navbar a:hover, .navbar a:focus {
+  color: #ffffff!important;
+}
+
+.navButton {
+  padding: 1% 3%!important;
+  border: 1px solid white;
+  border-radius: 5px;
+  transition: 0.2s ease-in;
+}
+
+.navButton:focus, .navButton:hover {
+  background-color: rgba(27, 105, 22, 0.88);
+  border: 1px solid rgb(27, 105, 22, 0.88);
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E")!important;
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: rgb(255,102,203);
+} 
+
+.custom-toggler:hover {
+  border-color: white!important;
+  box-shadow: 0px 0px 15px white!important;
+}
+
+/* Hero Section CSS */
+
+.heroSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: fit-content;
+  overflow: hidden;
+  padding: 4%;
+}
+
+.heroSection img {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.heroSection .section {
+  margin-top: 10%;
+  border-radius: 15px;
+  padding: 2% 1%;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.heroSection .section h2 {
+  font-size: max(3.1vw, 40px);
+  text-transform: uppercase;
+  color: white;
+  text-shadow: 0px 0px 20px black;
+  font-family: "Anton", sans-serif;
+  line-height: 50px;
+}
+.heroSection  .section h4{
+  color: #F92001;
+  line-height: 15px;
+}
+
+.heroSection ul a {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+
+.heroSection li {
+  padding: 5% 0;
+  list-style: none;
+  font-size: 1.4vw;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  font-weight: 600;
+  transition: 0.3s ease-in;
+}
+
+.heroSection ul li:hover {
+  color: #F92001;
+}
+
+.heroSection .contact{
+   display: flex;
+    flex-direction: column;
+    background-color:rgba(251, 251, 251, 0.4) ;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2) ;
+    border-radius: 30px;
+    width: 45%; 
+    padding: 2% 3%; 
+}
+
+/* Block One */
+
+.blockOne {
+  background-color: white;
+  width: 100vw;
+  padding: 10% 4%;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  z-index: 10;
+  position: relative;
+  top: -30px;
+}
+
+/* WhyCarWash CSS */
+
+.whyCarWash h1 {
+  font-family: "Anton", sans-serif;
+  font-size: max(4.5vw, 45px);
+  text-align: center;
+}
+
+.whyCarWash h5 {
+  text-align: justify;
+  font-size: max(1.7vw, 20px);
+  color: #757575;
+  line-height: 25px;
+  margin: 1.5vw 0;
+}
+
+/* Services */
+
+.services {
+  padding: 0 5%;
+  margin-bottom: 5%;
+  scroll-behavior: smooth;
+}
+
+.services .content-wrapper {
+  margin-bottom: 2vw;
+}
+
+.services h1 {
+  font-family: "Anton", sans-serif;
+  font-size: max(4.5vw, 45px);
+  text-align: left;
+}
+
+.services h3 {
+  font-family: "Anton", sans-serif;
+  font-size: max(3.5vw, 35px);
+  text-align: left;
+}
+
+.services h5 {
+  text-align: justify;
+  word-spacing: 2px;
+  line-height: 30px;
+}
+
+.services .scrolling div {
+  height:fit-content;
+  /* overflow: hidden; */
+}
+
+.services .service img {
+  width: 100%;
+}
+
+/* Happy Clients CSS */
+
+.happyClients {
+  width: 100vw;
+  height: 60vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 5%;
+}
+
+.happyClients #myVideo {
+  position: relative;
+}
+
+.happyClients .counter {
+  position: absolute;
+  width: 100%;
+}
+
+.happyClients .counter p {
+  font-size: 2vw!important;
+  font-family: "Anton", sans-serif;
+  color: white;
+  letter-spacing: 2px;
+  font-weight: 300;
+}
+
+.happyClients .counter h1 {
+  font-family: "Anton", sans-serif;
+  font-size: max(4.5vw, 45px);
+}
+
+/* Pricing CSS */
+
+.pricing {
+  padding: 0 5%;
+}
+.pricing button h5{
+  font-size: 2vw;
+}
+
+.pricing h1 {
+  font-size: max(4.5vw, 45px);
+  font-family: 'Anton', sans-serif;
+}
+
+.pricing h5 {
+  word-spacing: 2px;
+  line-height: 30px;
+}
+
+.discount {
+  padding: 3% 5%;
+  font-size: 3.5vw;
+  font-family: "Anton", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.discount span {
+  font-size: 72px;
+  background: -webkit-linear-gradient(#FFCA2C, red);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Testimonials */
+
+.testimonials {
+  padding: 2% 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.testimonials .rating{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 1.5vw;
+}
+
+.testimonials h1 {
+  width: 100%;
+  font-size: max(4.5vw, 45px);
+  margin-bottom: 5%;
+  font-family: 'Anton', sans-serif;
+}
+
+.testimonials .userImage {
+  width: 350px;
+  height: 350px;
+  overflow: hidden;
+  border-radius: 15px!important;
+}
+
+.testimonials .userImage img {
+  width: 100%;
+  height: 100%;
+  transition: 0.3s ease-in;
+}
+
+.testimonials .userImage img:hover {
+  scale: 1.1;
+  cursor: pointer;
+}
+
+.testimonials h3 {
+  text-transform: uppercase;
+  font-size: max(3.5vw, 35px);
+  font-family: 'Anton', sans-serif;
+}
+
+.testimonials h5 {
+  text-align: justify;
+  font-weight: 650;
+  word-spacing: 2px;
+  line-height: 30px;
+}
+
+/* AppFooter CSS */
+
+.appFooter {
+  background-color: white;
+  padding: 2% 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.appFooter a {
+  text-decoration: none;
+  color: black;
+  transition: 0.2s ease-in;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.appFooter a:hover {
+  color: #FF041f;
+}
+
+@media screen and (max-width: 900px){
+  .container-fluid a{
+    height: 8vh;
+  }
+  .heroSection{
+    height: 50vh;
+  }
+  .heroSection img{
+    height: 70vh;
+    width: auto;
+  }
+  .heroSection .section h2{
+    line-height: 50px;
+  }
+  .heroSection .section h4{
+    line-height: 19px;
+  }
+  .heroSection .section{
+    gap: 6px;
+  }
+  .heroSection .section .btn h4{
+    font-size: 15px;
+  }
+  .heroSection .contact{
+    display: none;
+  }
+  .blockOne{
+    padding: 10% 4% 0 4%;
+  }
+  .whyCarWash h1{
+    margin-top: 15px;
+    text-align: left;
+  }
+  .service h3{
+    margin-top: 15px;
+  }
+  .happyClients{
+    width: auto;
+    height: 70vh;
+  }
+  .happyClients video{
+    width: auto;
+    height: 100%;
+  }
+  .pricing button h5{
+    font-size: 5vw;
+  }
+  .pricing .TDCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .pricing .col-md-8{
+    flex-direction: column;
+    height: 1000px;
+    padding: 5% 0%;
+  }
+  .discount{
+    font-size: xx-large;
+  }
+  .discount span{
+    font-size: 45px;
+  }
+  .testimonials h1{
+    margin-top: 15px;
+  }
+  .testimonials h3{
+    margin-top: 15px;
+  }
+  .testimonials .rating{
+    font-size: 6vw;
+  }
+  .appFooter h5{
+    text-align: center;
+  }
+
+}

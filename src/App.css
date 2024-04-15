@@ -365,6 +365,24 @@ body, html {
   color: #FF041f;
 }
 
+.footerContact {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.footerContact li {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  padding: 5% 0;
+}
+
 @media screen and (max-width: 900px){
   .container-fluid a{
     height: 8vh;
@@ -440,5 +458,11 @@ body, html {
   .appFooter h5{
     text-align: center;
   }
-
+  .footerContact {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0px;
+  }
+  .footerContact li {
+    padding: 1%;
+  }
 }
